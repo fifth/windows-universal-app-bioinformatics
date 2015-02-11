@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="windows_universal_app_bioinformatics.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:windows_universal_app_bioinformatics"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0"
+                    Margin="10, 10, 0, 10">
+            <TextBlock Height="auto"
+                       Margin="10, 10, 10, 10">
+                bioinformatics
+                windows
+                universal
+                app
+            </TextBlock>
+            <TextBlock Height="auto"
+                       Margin="10, 10, 10, 10"
+                       FontSize="20" 
+                       TextWrapping="WrapWholeWords">
+                This site is used to analyse the repeat of a certain DNA senquence and you can custom the parameters you want. Varieties of input and output format is supported(under developement).<LineBreak />
+                The program uses an algorithm called MSATR. Here is the paper on cnki.<LineBreak />
+                More definition and analyse algorithms will be avalible afterwards.
+            </TextBlock>
+            <TextBox Height="auto"
+                     Margin="10, 10, 10, 10"
+                     Text="enter the senquences you wnat to analyse"
+                     Name="senquenceTextBox"
+                     GotFocus="senquenceTextBox_GotFocus"
+                     TextWrapping="Wrap"/>
+
+        </StackPanel>
+    </Grid>
+</Page>

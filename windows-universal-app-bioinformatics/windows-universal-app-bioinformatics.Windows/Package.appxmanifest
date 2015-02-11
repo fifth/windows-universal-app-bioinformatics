@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+
+  <Identity Name="04f88fc4-1da7-422d-8ae1-f7bfa0df2367"
+            Publisher="CN=fifth"
+            Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>windows-universal-app-bioinformatics.Windows</DisplayName>
+    <PublisherDisplayName>fifth</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+        Executable="$targetnametoken$.exe"
+        EntryPoint="windows_universal_app_bioinformatics.Windows.App">
+        <m2:VisualElements
+            DisplayName="windows-universal-app-bioinformatics.Windows"
+            Square150x150Logo="Assets\Logo.png"
+            Square30x30Logo="Assets\SmallLogo.png"
+            Description="windows-universal-app-bioinformatics.Windows"
+            ForegroundText="light"
+            BackgroundColor="#464646">
+            <m2:SplashScreen Image="Assets\SplashScreen.png" />
+        </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
